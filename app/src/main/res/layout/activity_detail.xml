@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/movieBackdrop"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/movie_backdrop_placeholder"/>
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Название фильма"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/movieYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023"
+                android:textColor="?android:attr/textColorSecondary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" • "
+                android:paddingHorizontal="4dp"/>
+
+            <TextView
+                android:id="@+id/movieDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2ч 15м"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTrailer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:text="Смотреть трейлер"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_play"
+            app:iconTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/movieDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание фильма..."
+            android:padding="16dp"
+            android:lineSpacingMultiplier="1.2"/>
+    </LinearLayout>
+</ScrollView>
