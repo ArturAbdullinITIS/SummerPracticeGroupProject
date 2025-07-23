@@ -10,18 +10,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Mood">
+        android:theme="@style/Theme.MoodMovies">
         <activity
-            android:name=".ActivityDetail"
+            android:name=".screens.ActivityDetail"
             android:exported="false" />
         <activity
-            android:name=".ItemMovie"
+            android:name=".screens.ItemMovie"
             android:exported="false" />
         <activity
-            android:name=".ActivityList"
+            android:name=".screens.ActivityList"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".screens.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

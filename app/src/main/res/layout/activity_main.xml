@@ -28,17 +28,20 @@
             app:chipSpacing="12dp">
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/chipHappy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="😊 Радостное"
                 app:chipBackgroundColor="@color/chip_color_selector"/>
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/chipSad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="😢 Грустное"/>
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/chipInspired"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="🤩 Вдохновляющее"/>
