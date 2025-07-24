@@ -1,10 +1,11 @@
+package com.example.mood.screens
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mood.databinding.ActivityMainBinding
-import com.example.mood.screens.ActivityList
-import com.google.android.material.chip.Chip
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
