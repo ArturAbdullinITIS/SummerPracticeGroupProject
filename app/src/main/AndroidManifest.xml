@@ -15,9 +15,6 @@
             android:name=".screens.ActivityDetail"
             android:exported="false" />
         <activity
-            android:name=".screens.ItemMovie"
-            android:exported="false" />
-        <activity
             android:name=".screens.ActivityList"
             android:exported="false" />
         <activity
