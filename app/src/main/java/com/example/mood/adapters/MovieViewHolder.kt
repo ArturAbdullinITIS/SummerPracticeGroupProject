@@ -1,4 +1,4 @@
-package com.example.mood.screens
+package com.example.mood.adapters
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -13,15 +13,14 @@ class MovieViewHolder(
 
     fun bind(movie: Movie) {
         with(binding) {
+            movieTitle.text = "${movie.title} (${movie.year})"
 
-            movieTitle.text = movie.title
-            movieRating.rating = movie.rating / 2
+
 
             Glide.with(itemView.context)
                 .load(movie.posterUrl)
                 .placeholder(R.drawable.movie_placeholder)
                 .into(moviePoster)
-
 
             root.setOnClickListener { onItemClick(movie) }
         }

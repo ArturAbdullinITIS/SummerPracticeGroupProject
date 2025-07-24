@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient">
+    android:background="@drawable/bg_gradient"
+    android:paddingTop="?attr/actionBarSize">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,6 +32,9 @@
                 android:id="@+id/chipHappy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:checkable="true"
                 android:text="😊 Радостное"
                 app:chipBackgroundColor="@color/chip_color_selector"/>
 
@@ -38,12 +42,18 @@
                 android:id="@+id/chipSad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:checkable="true"
                 android:text="😢 Грустное"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipInspired"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:checkable="true"
                 android:text="🤩 Вдохновляющее"/>
         </com.google.android.material.chip.ChipGroup>
 
