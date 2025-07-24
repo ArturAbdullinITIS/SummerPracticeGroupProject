@@ -4,9 +4,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.mood.R
 import com.example.mood.databinding.ActivityItemMovieBinding
+import com.example.mood.model.Movie
 
-
-//модель Movie от Гали (поля и название вьюшки поменяю как будет готово)
 class MovieViewHolder(
     private val binding: ActivityItemMovieBinding,
     private val onItemClick: (Movie) -> Unit
@@ -14,16 +13,17 @@ class MovieViewHolder(
 
     fun bind(movie: Movie) {
         with(binding) {
-            titleTextView.text = movie.title
-            yearTextView.text = movie.year.toString()
-            descriptionTextView.text = movie.plot
+
+            movieTitle.text = movie.title
+            movieRating.rating = movie.rating / 2
 
             Glide.with(itemView.context)
                 .load(movie.posterUrl)
                 .placeholder(R.drawable.movie_placeholder)
-                .into(posterImageView)
+                .into(moviePoster)
 
-            itemView.setOnClickListener { onItemClick(movie) }
+
+            root.setOnClickListener { onItemClick(movie) }
         }
     }
 }
